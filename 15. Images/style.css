@@ -30,6 +30,20 @@ img {
 body {
   font-family: 'Nunito', sans-serif;
   min-height: 100vh;
+  background-color: aliceblue;
+  background-image: url('img/bubbles.png'),
+    linear-gradient(to left, steelblue, #245f8f);
+  background-repeat: repeat-y, no-repeat;
+  background-position: right center;
+  background-size: 20%, auto;
+}
+
+.container {
+  background-color: rgb(251, 210, 156);
+  background-image: url('img/map-2176x1451.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 .hero {
@@ -39,10 +53,13 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
+  background-color: hsla(0, 0%, 30%, 0.3);
 }
 
 .h1 {
   font-size: 500%;
+  color: aliceblue;
+  text-shadow: 1px 1px 5px #000;
 }
 
 .profile-pic-figure {
@@ -53,7 +70,7 @@ body {
   width: 100%;
   height: auto;
   min-width: 100px;
-  border: 5px double gray;
+  border: 5px double #333;
   border-radius: 50%;
 }
 
