@@ -21,6 +21,10 @@
   --LIGHT-COLOR: whitesmoke;
   --DARK-COLOR: #000;
 
+  /* SQUARE */
+  --SQUARE-BGCOLOR: papayawhip;
+  --SQUARE-SIZE: max(150px, 20vw);
+
   /* GENERAL */
   --PADDING: 0.5rem;
   --SHADOWS: 0 6px 5px -5px var(--DARK-COLOR);
@@ -40,7 +44,6 @@ body {
 
 header,
 nav,
-main,
 footer {
   display: grid;
   place-content: center;
@@ -69,8 +72,28 @@ nav {
 
 main {
   flex-grow: 1;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: min(4vw, 15px);
 }
 
 footer {
   bottom: 0;
+}
+
+/* FEATURES */
+
+.square {
+  background-color: var(--SQUARE-BGCOLOR);
+  height: var(--SQUARE-SIZE);
+  width: var(--SQUARE-SIZE);
+  border: var(--BORDERS);
+  border-radius: 15px;
+  display: grid;
+  place-content: center;
+  font-size: var(--FS-XL);
+  box-shadow: var(--SHADOWS);
 }
