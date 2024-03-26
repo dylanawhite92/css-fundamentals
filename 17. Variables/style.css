@@ -9,21 +9,31 @@
 
 /* || VARIABLES */
 :root {
+  /* FONT */
+  --FF: 'Nunito', sans serif;
+  --FS: 1.5rem;
+  --FS-XL: 3rem;
+
   /* COLOR */
   --BGCOLOR: #475569;
-  --ALTBGCOLOR: #1e293b;
-  --RADIALCOLOR: whitesmoke;
-  --LIGHTCOLOR: whitesmoke;
-  --DARKCOLOR: #000;
+  --ALT-BGCOLOR: #1e293b;
+  --RADIAL-COLOR: whitesmoke;
+  --LIGHT-COLOR: whitesmoke;
+  --DARK-COLOR: #000;
+
+  /* GENERAL */
+  --PADDING: 0.5rem;
+  --SHADOWS: 0 6px 5px -5px var(--DARK-COLOR);
+  --BORDERS: 2px solid var(--DARK-COLOR);
 }
 
 /* || GENERAL STYLES */
 body {
-  font: 1.5rem 'Nunito', sans-serif;
+  font: var(--FS) var(--FF);
   min-height: 100vh;
 
   background-color: var(--BGCOLOR);
-  background-image: radial-gradient(var(--RADIALCOLOR), var(--BGCOLOR));
+  background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
   display: flex;
   flex-direction: column;
 }
@@ -41,8 +51,8 @@ footer {
 header,
 footer {
   position: sticky;
-  background-color: var(--ALTBGCOLOR);
-  color: var(--LIGHTCOLOR);
+  background-color: var(--ALT-BGCOLOR);
+  color: var(--LIGHT-COLOR);
 }
 
 header {
@@ -50,10 +60,11 @@ header {
 }
 
 nav {
-  background-color: var(--LIGHTCOLOR);
-  color: var(--DARKCOLOR);
-  padding: 0.5rem;
-  border-bottom: 2px solid var(--DARKCOLOR);
+  background-color: var(--LIGHT-COLOR);
+  color: var(--DARK-COLOR);
+  padding: var(--PADDING);
+  border-bottom: var(--BORDERS);
+  box-shadow: var(--SHADOWS);
 }
 
 main {
