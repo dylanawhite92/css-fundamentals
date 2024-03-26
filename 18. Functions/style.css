@@ -125,3 +125,18 @@ footer {
   font-size: var(--FS-XL);
   box-shadow: var(--SHADOWS);
 }
+
+@media screen and (min-width: 576px) {
+  main {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  main section {
+    width: calc(70% - 5px);
+  }
+
+  main aside {
+    width: calc(30% - 5px);
+  }
+}
