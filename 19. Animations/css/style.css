@@ -58,11 +58,40 @@ div:last-child {
 
 div:hover {
   background-color: midnightblue;
-  transition-property: background-color, transform;
+  /* transition-property: background-color, transform;
   transition-duration: 2s, 3s;
-  transition-delay: 0.2s;
+  transition-delay: 0.2s; */
+  /* transition-timing-function: linear; */
+  transition: all 1.5s ease-in-out 0.2s;
 }
 
 div:last-child:hover {
   transform: rotate(180deg);
+}
+
+.animate {
+  /* animation-name: slide;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: 5;
+  animation-direction: normal;
+  animation-fill-mode: forwards; */
+  animation: 5s ease-in-out 1s 2 normal forwards slide;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(300px) rotate(180deg);
+  }
+  66% {
+    transform: translateX(-300px) rotate(-180deg);
+  }
+  100% {
+    transform: translateX(0px);
+    background-color: rebeccapurple;
+  }
 }
