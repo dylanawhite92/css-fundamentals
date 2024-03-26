@@ -44,3 +44,25 @@ header {
   align-items: center;
   position: relative;
 }
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  background-color: var(--HEADER-COLOR);
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+}
+
+.menu-icon::before {
+  transform: translate(-20px, -12px);
+}
+.menu-icon::after {
+  transform: translate(-20px, 12px);
+}
