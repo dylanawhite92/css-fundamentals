@@ -7,13 +7,23 @@
   box-sizing: border-box;
 }
 
+/* || VARIABLES */
+:root {
+  /* COLOR */
+  --BGCOLOR: #475569;
+  --ALTBGCOLOR: #1e293b;
+  --RADIALCOLOR: whitesmoke;
+  --LIGHTCOLOR: whitesmoke;
+  --DARKCOLOR: #000;
+}
+
 /* || GENERAL STYLES */
 body {
   font: 1.5rem 'Nunito', sans-serif;
   min-height: 100vh;
 
-  background-color: #475569;
-  background-image: radial-gradient(whitesmoke, #475569);
+  background-color: var(--BGCOLOR);
+  background-image: radial-gradient(var(--RADIALCOLOR), var(--BGCOLOR));
   display: flex;
   flex-direction: column;
 }
@@ -31,8 +41,8 @@ footer {
 header,
 footer {
   position: sticky;
-  background-color: #1e293b;
-  color: whitesmoke;
+  background-color: var(--ALTBGCOLOR);
+  color: var(--LIGHTCOLOR);
 }
 
 header {
@@ -40,10 +50,10 @@ header {
 }
 
 nav {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--LIGHTCOLOR);
+  color: var(--DARKCOLOR);
   padding: 0.5rem;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--DARKCOLOR);
 }
 
 main {
