@@ -26,3 +26,21 @@ header {
   background-color: var(--HEADER-BGCOLOR);
   color: var(--HEADER-COLOR);
 }
+
+.header-title-line {
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
